@@ -40,7 +40,7 @@ const styles = StyleSheet.create({
   text: {
     color: '#3f3f9f',
     fontSize: 18,
-    fontFamily: 'Poppins-Medium',
+    fontWeight: '600',
     marginLeft: 12,
   },
 });

@@ -28,9 +28,14 @@ export default function RootLayout() {
             <StatusBar style="dark" />
             <Stack 
                 screenOptions={{
-                headerShown: false,
-                animation: 'fade',
-                contentStyle: { backgroundColor: 'transparent' },
+                    headerShown: false,
+                    animation: 'slide_from_right',
+                    animationDuration: 250,
+                    presentation: 'card',
+                    gestureEnabled: true,
+                    gestureDirection: 'horizontal',
+                    animationTypeForReplace: 'push',
+                    contentStyle: { backgroundColor: 'transparent' },
                 }}
             />
         </LinearGradient>

@@ -78,7 +78,7 @@ const styles = StyleSheet.create({
   },
   title: {
     fontSize: 20,
-    fontFamily: 'Poppins-Bold',
+    fontWeight: 'bold',
     color: '#000',
   },
   placeholder: {

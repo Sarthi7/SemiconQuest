@@ -2,12 +2,18 @@
 import { View, Text, TouchableOpacity, StyleSheet, SafeAreaView, StatusBar } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 import { Link, useRouter } from 'expo-router';
+import { useState } from 'react';
 import { Image } from 'react-native';
 import MenuButton from '../components/MenuButton';
 import IconButton from '../components/IconButton';
 
 export default function HomeScreen() {
     const router = useRouter();
+    const [volIcon, changeVol] = useState('volume-high');
+
+    const updateVol = () => {
+        changeVol(prev => prev == 'volume-high' ? 'volume-off' : 'volume-high');
+    }
 
     return (
         <>
@@ -51,9 +57,9 @@ export default function HomeScreen() {
 
                     <View style={styles.footer}>
                         <View style={styles.iconButtonsContainer}>
-                            <IconButton icon="cog" onPress={() => router.push('/settings')} />
+                            <IconButton icon="information" onPress={() => router.push('/about')} />
                             <IconButton icon="account" onPress={() => router.push('/profile')} />
-                            <IconButton icon="volume-high" onPress={() => console.log('Toggle sound')} />
+                            <IconButton icon={volIcon} onPress={() => updateVol()} />
                         </View>
                         <Text style={styles.version}>Version 1.0.0</Text>
                     </View>
@@ -88,7 +94,6 @@ const styles = StyleSheet.create({
     },
     subtitle: {
         fontSize: 18,
-        // fontFamily: 'Poppins-Regular',
         color: '#6a6ad9',
         marginTop: 5,
     },
@@ -105,7 +110,6 @@ const styles = StyleSheet.create({
         marginBottom: 15,
     },
     version: {
-        // fontFamily: 'Poppins-Regular',
         fontSize: 14,
         color: '#9999cc',
         marginTop: 10,

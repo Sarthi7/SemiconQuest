@@ -9,7 +9,7 @@ export const levels = [
         id: 2,
         title: 'Distribution Routes',
         description: 'Plan and optimize delivery routes for maximum efficiency.',
-        unlocked: true,
+        unlocked: false,
       },
       {
         id: 3,

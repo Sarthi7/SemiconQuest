@@ -112,7 +112,7 @@ const styles = StyleSheet.create({
   },
   title: {
     fontSize: 20,
-    fontFamily: 'Poppins-Bold',
+    fontWeight: 'bold',
     color: '#000',
   },
   placeholder: {
@@ -150,14 +150,13 @@ const styles = StyleSheet.create({
   },
   levelTitle: {
     fontSize: 22,
-    fontFamily: 'Poppins-Bold',
+    fontWeight: 'bold',
     color: '#6B0F1A',
     textAlign: 'center',
     marginBottom: 12,
   },
   levelDescription: {
     fontSize: 16,
-    fontFamily: 'Poppins-Regular',
     color: '#666',
     textAlign: 'center',
     lineHeight: 24,
@@ -180,7 +179,7 @@ const styles = StyleSheet.create({
   startButtonText: {
     color: 'white',
     fontSize: 18,
-    fontFamily: 'Poppins-Medium',
+    fontWeight: '600'
   },
   lockedContainer: {
     alignItems: 'center',
@@ -188,7 +187,7 @@ const styles = StyleSheet.create({
   lockedText: {
     color: '#999',
     fontSize: 16,
-    fontFamily: 'Poppins-Medium',
+    fontWeight: '600',
     marginTop: 8,
   },
 });

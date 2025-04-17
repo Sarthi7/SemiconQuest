@@ -75,17 +75,16 @@ const styles = StyleSheet.create({
   levelLabelText: {
     color: 'white',
     fontSize: 14,
-    fontFamily: 'Poppins-Medium',
+    fontWeight: '600'
   },
   title: {
     fontSize: 16,
-    fontFamily: 'Poppins-Medium',
+    fontWeight: '600',
     color: '#000',
     marginBottom: 4,
   },
   description: {
     fontSize: 14,
-    fontFamily: 'Poppins-Regular',
     color: '#666',
     lineHeight: 20,
   },

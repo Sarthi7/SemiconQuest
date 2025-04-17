@@ -1,6 +1,5 @@
 import React from 'react';
 import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
-import { LinearGradient } from 'expo-linear-gradient';
 import { useRouter } from 'expo-router';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 import { SafeAreaView } from 'react-native-safe-area-context';
@@ -9,12 +8,7 @@ export default function SinglePlayerScreen() {
   const router = useRouter();
 
   return (
-    <LinearGradient
-      colors={['#F9FCE7', '#e6f2ff']}
-      style={styles.container}
-      start={{ x: 0, y: 0 }}
-      end={{ x: 1, y: 1 }}
-    >
+    <>
       <SafeAreaView style={styles.safeArea}>
         <View style={styles.header}>
           <TouchableOpacity 
@@ -32,7 +26,7 @@ export default function SinglePlayerScreen() {
           {/* Add your single player content here */}
         </View>
       </SafeAreaView>
-    </LinearGradient>
+    </>
   );
 }
 
@@ -71,7 +65,7 @@ const styles = StyleSheet.create({
   },
   title: {
     fontSize: 20,
-    fontFamily: 'Poppins-Bold',
+    fontWeight: 'bold',
     color: '#3f3f9f',
   },
   content: {
@@ -82,7 +76,6 @@ const styles = StyleSheet.create({
   },
   text: {
     fontSize: 16,
-    fontFamily: 'Poppins-Regular',
     color: '#3f3f9f',
     textAlign: 'center',
   },
