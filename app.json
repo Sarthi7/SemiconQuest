@@ -9,28 +9,26 @@
     "userInterfaceStyle": "light",
     "newArchEnabled": true,
     "splash": {
-      "image": "./assets/splash-icon.png",
+      "image": "./assets/splash-screen.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.anonymous.semicon-quest"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.anonymous.semiconquest"
     },
     "web": {
       "favicon": "./assets/favicon.png"
     },
-    "plugins": [
-      "expo-router"
-    ],
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "plugins": ["expo-router"],
+    "assetBundlePatterns": ["**/*"],
     "fonts": [
       {
         "asset": "./assets/fonts/Poppins-Regular.ttf",
@@ -44,6 +42,14 @@
         "asset": "./assets/fonts/Poppins-Bold.ttf",
         "fontFamily": "Poppins-Bold"
       }
-    ]
+    ],
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "1a80b468-b2fd-4987-af22-dc52ef09f8f3"
+      }
+    }
   }
 }
