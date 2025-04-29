@@ -42,7 +42,7 @@ export default function SignupScreen() {
             <View style={styles.header}>
               <TouchableOpacity 
                 style={styles.backButton}
-                onPress={() => router.back()}
+                onPress={() => router.replace('/')}
               >
                 <MaterialCommunityIcons name="arrow-left" size={24} color="#000" />
               </TouchableOpacity>

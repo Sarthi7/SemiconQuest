@@ -8,6 +8,7 @@ import { levels } from '../../utils/constants';
 
 export default function LevelScreen() {
   const router = useRouter();
+  console.log(router);
   const { id } = useLocalSearchParams();
   
   // Convert id to number and find the level
@@ -63,7 +64,7 @@ export default function LevelScreen() {
             {level.unlocked ? (
               <TouchableOpacity 
                 style={styles.startButton}
-                onPress={() => console.log(`Starting level ${levelId}`)}
+                onPress={() => router.push('/levels/level01')}
               >
                 <Text style={styles.startButtonText}>Start Level</Text>
               </TouchableOpacity>
